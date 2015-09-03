@@ -1,17 +1,4 @@
-Skip to content
-This repository  
-Pull requests
-Issues
-Gist
- @TylerKotkin
- Watch 2
-  Unstar 14
-  Fork 7
-tiyd-python-2015-08/assigments
-Branch: master  assigments/04--Frequency-Filer/sample.txt
-@jamesmallenjamesmallen a day ago jiggering assignments around
-1 contributor
-RawBlameHistory     7223 lines (5579 sloc)  346.333 kB
+
 ﻿Project Gutenberg's The Hound of the Baskervilles, by A. Conan Doyle
 
 This eBook is for the use of anyone anywhere at no cost and with
