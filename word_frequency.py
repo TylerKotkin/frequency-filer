@@ -1,9 +1,7 @@
 import re
 
 def word_frequency(text):
-    # return {"hello": 1}
     words = re.sub(r'[,.!-]', "", text).lower().split()
-    # words = punc_removed.split()
     how_many = {}
     for i in words:
         if i in how_many:
@@ -15,7 +13,6 @@ def word_frequency(text):
 
 
 def main():
-    # sample = open('sample.txt')
     with open('sample.txt') as g:
         text = g.read()
         how_many = word_frequency(text)
