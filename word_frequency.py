@@ -1,7 +1,7 @@
 import re
 
 def word_frequency(text):
-    words = re.sub(r'[,.!-]', "", text).lower().split()
+    words = re.sub(r'[,.!-?0-9]', "", text).lower().split()
     how_many = {}
     for i in words:
         if i in how_many:
@@ -11,12 +11,10 @@ def word_frequency(text):
     return how_many
 
 
-
 def main():
     with open('sample.txt') as g:
         text = g.read()
-        how_many = word_frequency(text)
-        for answer in sorted(how_many.items(), key=lambda c: c[1], reverse=True)[:20]:
+        for answer in sorted(word_frequency(text).items(), key=lambda c: c[1], reverse=True)[:20]:
             print(answer)
 
 
