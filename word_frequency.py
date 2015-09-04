@@ -2,8 +2,8 @@ import re
 
 def word_frequency(text):
     # return {"hello": 1}
-    punc_removed = re.sub(r'[,.!-]', "", text).lower()
-    words = punc_removed.split()
+    words = re.sub(r'[,.!-]', "", text).lower().split()
+    # words = punc_removed.split()
     how_many = {}
     for i in words:
         if i in how_many:
