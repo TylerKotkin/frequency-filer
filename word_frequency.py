@@ -12,15 +12,15 @@ def word_frequency(text):
             how_many[i] = 1
     return how_many
 
+
+
 def main():
     # sample = open('sample.txt')
     with open('sample.txt') as g:
         text = g.read()
         how_many = word_frequency(text)
-        how_many = sorted(how_many.items(), key=lambda c: c[1], reverse=True)
-        how_many = how_many[:20]
-        for pair in how_many:
-            print(pair)
+        for answer in sorted(how_many.items(), key=lambda c: c[1], reverse=True)[:20]:
+            print(answer)
 
 
 if __name__ == '__main__':
